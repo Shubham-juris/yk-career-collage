@@ -30,6 +30,9 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-6 items-center font-medium">
+             <NavLink to="/" className={linkClass}>
+              Home
+            </NavLink>
             <NavLink to="/programs" className={linkClass}>
               Programs
             </NavLink>

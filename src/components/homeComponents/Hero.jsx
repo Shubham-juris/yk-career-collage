@@ -64,20 +64,6 @@ export default function HeroSection() {
       />
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* 🔥 MOVING DISCOUNT TICKER */}
-      <div className="absolute bottom-0 w-full overflow-hidden bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 z-20">
-        <div className="flex whitespace-nowrap animate-marquee py-2 text-white font-bold text-sm md:text-lg">
-          {[...Array(15)].map((_, i) => (
-            <div key={i} className="flex items-center gap-6 mx-4">
-              <span className="bg-black/80 text-yellow-300 px-3 py-1 rounded-full">
-                30% DISCOUNT
-              </span>
-              <span className="uppercase tracking-wider">Enroll Now</span>
-              <span className="text-yellow-200">★</span>
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* Content */}
       <div className="relative z-10 w-full flex">

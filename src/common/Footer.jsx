@@ -1,6 +1,10 @@
 import React from "react";
+import { useChat } from "../usecontext/ChatContext";
 
 const Footer = () => {
+
+  const { setOpen } = useChat();
+
   return (
     <>
       {/* ===== Main Footer Bar ===== */}
@@ -21,9 +25,9 @@ const Footer = () => {
 
           {/* Right: Address */}
           <div className="text-sm text-gray-700 text-center md:text-right">
-            <p className="font-semibold">Career College</p>
-            <p>Address: Sector 22, Chandigarh</p>
-            <p>Punjab (INDIA)</p>
+            <p className="font-semibold"> YK Career College</p>
+            <p>Address: xyz</p>
+            <p>yk (xyz)</p>
           </div>
         </div>
       </footer>
@@ -42,7 +46,10 @@ const Footer = () => {
 
         {/* Right Button */}
         <div className="absolute right-4 bottom-2">
-          <button className="bg-blue-600 text-white px-5 py-2 rounded-full shadow hover:bg-blue-700 transition">
+          <button
+            onClick={() => setOpen(true)}
+            className="bg-blue-600 text-white px-5 py-2 rounded-full shadow-lg"
+          >
             Admissions are open – Chat Now
           </button>
         </div>
