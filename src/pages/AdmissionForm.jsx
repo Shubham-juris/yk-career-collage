@@ -3,11 +3,35 @@ import React, { useState } from "react";
 const courses = [
   "Sign Language Learning",
   "French Level A2",
-  "ESL – Language Training",
+  "Professional Photography – Beginner",
+  "Event Planning – Basics",
+  "Guitar Training – Basics",
+  "Web Designing – CMS Basics",
+  "Real Estate Sales – Beginner",
+  "Blog Writing – Basics",
+  "Interpreter / Translator – Basics",
+  "Sales – Beginner",
+  "CICC Exam Preparation",
+  "Career Development Course",
   "Digital Marketing – Beginner",
   "Graphics Designing – Beginner",
-  "Web Designing – CMS Basics",
+  "NDAEB Basic Theory Exam Preparation",
+  "NDAEB Advance Theory Exam Preparation",
+  "NDAEB Clinical Practice Evaluation",
+  "ESL – Language Training",
+  "Food Handling Certificate Course",
+  "Reception Skills",
+  "Bartending",
+  "Makeup Artistry Training",
+  "Freight Brokerage",
+  "Safety & Compliance",
+  "Basic Bookkeeping",
+  "Truck Dispatch Training",
+  "Basic Security Training & First Aid",
+  "Certificate in Adult Education – I",
+  "Certificate in Adult Education – II"
 ];
+
 
 export default function AdmissionForm() {
   const [step, setStep] = useState(1);

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import img1 from "../../assets/home/hero.jpeg"
 
 const courses = [
   "Sign Language Learning",
@@ -51,19 +52,19 @@ export default function HeroSection() {
   }, []);
 
   return (
+
     <section className="relative h-[70vh] flex overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1521791136064-7986c2920216')",
+          backgroundImage: `url(${img1})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
-      <div className="absolute inset-0 bg-black/50" />
 
+      <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
       <div className="relative z-10 w-full flex">
