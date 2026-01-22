@@ -74,7 +74,7 @@ export default function HeroSection() {
             Career Training Program – Alberta
           </h1>
           <p className="text-xl mb-6">
-            $149 – Includes Professional Certification Exam
+            $xx9 – Includes Professional Certification Exam
           </p>
 
           <Link

@@ -180,12 +180,12 @@ export default function AdmissionForm() {
                 ⚠ Payment Gateway Under Maintenance
               </p>
               <p className="text-sm mt-2">
-                Please send ₹1999 to our official mobile number below
+                Please send $xx5 to our official mobile number below
               </p>
 
               <div className="bg-white p-3 rounded border mt-4">
                 <p className="text-xl font-bold text-blue-900">
-                  📞 98765 43210
+                  📞  +1 xxxxx698
                 </p>
                 <p className="text-xs text-gray-500">YK College Payment Number</p>
               </div>
