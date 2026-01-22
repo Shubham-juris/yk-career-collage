@@ -8,11 +8,12 @@ import CoursesPage from "../pages/CoursesPage";
 import Admission from "../pages/Admission";
 import AdmissionForm from "../pages/AdmissionForm";
 import Support from "../pages/Support";
+import ScrollToTop from "../pages/ScrollToTop";
 
 const RoutesPage = () => {
   return (
     <>
-    
+    <ScrollToTop/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="courses" element={<CoursesPage />} />

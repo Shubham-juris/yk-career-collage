@@ -32,7 +32,6 @@ const courses = [
   "Certificate in Adult Education – II"
 ];
 
-
 export default function AdmissionForm() {
   const [step, setStep] = useState(1);
   const [txnId, setTxnId] = useState("");
@@ -78,6 +77,7 @@ export default function AdmissionForm() {
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center p-6">
       <div className="bg-white w-full max-w-3xl rounded shadow">
+
         <div className="border-b p-5">
           <h1 className="text-2xl font-bold text-blue-900">
             YK College – Online Admission
@@ -86,6 +86,8 @@ export default function AdmissionForm() {
         </div>
 
         <div className="p-6">
+
+          {/* progress */}
           <div className="w-full h-2 bg-gray-200 rounded mb-8">
             <div
               className="h-2 bg-blue-800"
@@ -93,20 +95,22 @@ export default function AdmissionForm() {
             />
           </div>
 
-          <div className="grid grid-cols-4 text-center mb-8 text-sm">
+          {/* ✅ ONE LINE RESPONSIVE STEPS */}
+          <div className="grid grid-cols-4 text-center mb-8 text-[10px] sm:text-xs md:text-sm">
             {["Personal", "Documents", "Review", "Payment"].map((s, i) => (
               <div
                 key={i}
                 className={step >= i + 1 ? "text-blue-800" : "text-gray-400"}
               >
                 <div
-                  className={`w-8 h-8 mx-auto rounded-full border flex items-center justify-center ${
-                    step >= i + 1 && "bg-blue-800 text-white"
+                  className={`w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 mx-auto rounded-full border flex items-center justify-center ${
+                    step >= i + 1 ? "bg-blue-800 text-white" : ""
                   }`}
                 >
                   {i + 1}
                 </div>
-                {s}
+
+                <p className="mt-1 leading-tight">{s}</p>
               </div>
             ))}
           </div>
@@ -117,13 +121,16 @@ export default function AdmissionForm() {
               <input className="input" name="fullName" placeholder="Full Name" onChange={handleChange} />
               <input className="input" name="email" placeholder="Email" onChange={handleChange} />
               <input className="input" name="phone" placeholder="Phone" onChange={handleChange} />
+
               <select className="input" name="course" onChange={handleChange}>
                 <option value="">Select Course</option>
                 {courses.map((c, i) => (
                   <option key={i}>{c}</option>
                 ))}
               </select>
+
               <input className="input" name="age" placeholder="Age" onChange={handleChange} />
+
               <select className="input" name="gender" onChange={handleChange}>
                 <option value="">Gender</option>
                 <option>Male</option>
@@ -173,22 +180,12 @@ export default function AdmissionForm() {
             </div>
           )}
 
-          {/* STEP 4 – PAYMENT */}
+          {/* STEP 4 */}
           {step === 4 && !paid && (
             <div className="bg-yellow-50 border border-yellow-400 p-4 rounded text-center">
               <p className="text-lg font-bold text-yellow-800">
                 ⚠ Payment Gateway Under Maintenance
               </p>
-              <p className="text-sm mt-2">
-                Please send $xx5 to our official mobile number below
-              </p>
-
-              <div className="bg-white p-3 rounded border mt-4">
-                <p className="text-xl font-bold text-blue-900">
-                  📞  +1 xxxxx698
-                </p>
-                <p className="text-xs text-gray-500">YK College Payment Number</p>
-              </div>
 
               <input
                 className="input mt-4"
@@ -213,6 +210,7 @@ export default function AdmissionForm() {
               <p>Transaction ID: {txnId}</p>
             </div>
           )}
+
         </div>
 
         <style>{`
@@ -221,6 +219,7 @@ export default function AdmissionForm() {
           .btn-outline{border:1px solid #1e40af;color:#1e40af;padding:12px;border-radius:6px;width:100%;}
           .upload{border:1px dashed #ccc;padding:12px;border-radius:6px;display:block;text-align:center;cursor:pointer;}
         `}</style>
+
       </div>
     </div>
   );

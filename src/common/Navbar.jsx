@@ -67,6 +67,13 @@ const Navbar = () => {
         {open && (
           <div className="md:hidden bg-white border-t shadow-lg">
             <nav className="flex flex-col p-4 gap-4 font-medium">
+               <NavLink
+                to="/"
+                className={linkClass}
+                onClick={() => setOpen(false)}
+              >
+                Home
+              </NavLink>
               <NavLink
                 to="/programs"
                 className={linkClass}
