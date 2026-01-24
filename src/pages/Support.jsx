@@ -28,7 +28,7 @@ const Support = () => {
           <p className="text-sm">
             📧 admission@ykcollege.com  
             <br />
-            📞 +1 604 555 0182
+            📞 +1 xxxxxxxx256
           </p>
         </div>
 
@@ -43,7 +43,7 @@ const Support = () => {
           <p className="text-sm">
             📧 courses@ykcollege.com  
             <br />
-            📞 +1 604 555 0183
+            📞 +1 xxxxxxxx245
           </p>
         </div>
 
@@ -58,7 +58,7 @@ const Support = () => {
           <p className="text-sm">
             📧 support@ykcollege.com  
             <br />
-            📞 +1 604 555 0184
+            📞 +1 xxxxxxx295
           </p>
         </div>
       </div>
