@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -21,13 +22,35 @@ const Login = () => {
         <div className="bg-white shadow-xl rounded-lg p-8">
 
           {/* Heading */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-gray-800">
               Career College <span className="text-blue-700">Login</span>
             </h2>
             <p className="text-gray-600 mt-2">
               Login to access your dashboard
             </p>
+          </div>
+
+          {/* ✅ Continue with Google */}
+          <button
+            type="button"
+            className="
+              w-full border border-gray-300
+              flex items-center justify-center gap-3
+              py-3 rounded font-semibold
+              hover:bg-gray-100 transition
+              mb-6
+            "
+          >
+            <FcGoogle className="text-xl" />
+            Continue with Google
+          </button>
+
+          {/* OR line */}
+          <div className="flex items-center gap-3 mb-6">
+            <div className="flex-1 h-px bg-gray-300"></div>
+            <span className="text-sm text-gray-500">OR</span>
+            <div className="flex-1 h-px bg-gray-300"></div>
           </div>
 
           {/* Login Form */}
