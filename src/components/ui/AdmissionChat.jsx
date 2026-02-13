@@ -140,7 +140,7 @@ const AdmissionChat = () => {
 
   // Admission
   if (text.includes("admission") || text.includes("apply")) {
-    return "📝 Admissions are OPEN.\n📞 Contact: 9XXXXXXXX36";
+    return "📝 Admissions are OPEN.\n📞 Contact: (403) 921-4529";
   }
 
   // Contact
@@ -149,7 +149,7 @@ const AdmissionChat = () => {
     text.includes("number") ||
     text.includes("call")
   ) {
-    return "📞 Admission Helpline: 9XXXXXXXX36";
+    return "📞 Admission Helpline: (403) 921-4529";
   }
 
   // Default fallback

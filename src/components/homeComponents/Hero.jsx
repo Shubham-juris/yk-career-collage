@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/home/hero.jpeg"
+import img1 from "../../assets/home/hero.jpeg";
 
 const courses = [
   "Sign Language Learning",
@@ -52,7 +52,6 @@ export default function HeroSection() {
   }, []);
 
   return (
-
     <section className="relative h-[70vh] flex overflow-hidden">
       {/* Background Image */}
       <div
@@ -71,7 +70,7 @@ export default function HeroSection() {
         {/* LEFT */}
         <div className="w-[70%] flex flex-col justify-center px-6 md:px-16 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Career Training Program – Alberta
+            Start Better Learning Future From Here
           </h1>
           <p className="text-xl mb-6">
             $xx9 – Includes Professional Certification Exam

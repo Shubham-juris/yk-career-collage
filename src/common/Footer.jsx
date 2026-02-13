@@ -9,7 +9,6 @@ const Footer = () => {
       {/* ===== Main Footer ===== */}
       <footer className="bg-white border-t">
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
-          
           {/* Logo Section */}
           <div className="flex items-center gap-3 text-center md:text-left">
             <div className="w-12 h-12 bg-blue-600 text-white flex items-center justify-center font-bold text-lg">
@@ -26,8 +25,8 @@ const Footer = () => {
           {/* Address */}
           <div className="text-sm text-gray-700 text-center md:text-right">
             <p className="font-semibold">YK Career College</p>
-            <p>Address: xyz</p>
-            <p>yk (xyz)</p>
+            <p>215-213 Main Street, Slave Lake AB, T0G 2A2</p>
+            <p>311 32 WESTWINDS CRES NE, #110, CALGARY, Alberta, T3J5L3</p>
           </div>
         </div>
       </footer>
@@ -40,7 +39,6 @@ const Footer = () => {
       {/* ===== Bottom Admission Bar ===== */}
       <div className="fixed bottom-0 left-0 w-full z-50 bg-blue-200 border-t">
         <div className="max-w-7xl mx-auto px-3 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
-
           {/* Text */}
           <p className="text-xs md:text-base text-blue-900 text-center">
             Admissions are open for{" "}

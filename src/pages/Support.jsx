@@ -26,9 +26,9 @@ const Support = () => {
             Get help with online admission, document upload, and eligibility.
           </p>
           <p className="text-sm">
-            📧 admission@ykcollege.com  
+            📧 ykcareercollege@gmail.com  
             <br />
-            📞 +1 xxxxxxxx256
+            📞 +1(403) 921-4529
           </p>
         </div>
 
@@ -41,9 +41,9 @@ const Support = () => {
             Queries about syllabus, class schedule, and certificates.
           </p>
           <p className="text-sm">
-            📧 courses@ykcollege.com  
+            📧 ykcareercollege@gmail.com 
             <br />
-            📞 +1 xxxxxxxx245
+            📞 +1(403) 921-4529
           </p>
         </div>
 
@@ -56,9 +56,9 @@ const Support = () => {
             Payment failed, receipt issue, or login problem.
           </p>
           <p className="text-sm">
-            📧 support@ykcollege.com  
+            📧 ykcareercollege@gmail.com 
             <br />
-            📞 +1 xxxxxxx295
+            📞 +1(403) 921-4529
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@ const TopBar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
         <p>Career & Professional Training Solutions</p>
         <p>
-          Support@careerhub.com | <span className="font-semibold">+1 xxxxxxx589</span>
+          ykcareercollege@gmail.com | <span className="font-semibold">+1(403) 921-4529</span>
         </p>
       </div>
     </div>

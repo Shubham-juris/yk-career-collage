@@ -8,7 +8,7 @@ const FloatingChat = () => {
 
       {/* WhatsApp */}
       <a
-        href="https://wa.me/91999999999"
+        href="https://wa.me/(403) 921-4529"
         target="_blank"
         rel="noopener noreferrer"
         className="
@@ -26,7 +26,7 @@ const FloatingChat = () => {
 
       {/* Call */}
       <a
-        href="tel:+919999999999"
+        href="tel:+(403) 921-4529"
         className="
           bg-red-600
           hover:bg-red-700
