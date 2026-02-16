@@ -1,5 +1,6 @@
 import React from "react";
 import { useChat } from "../usecontext/ChatContext";
+import logo from "../assets/logo/logo.png"
 
 const Footer = () => {
   const { setOpen } = useChat();
@@ -11,9 +12,12 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
           {/* Logo Section */}
           <div className="flex items-center gap-3 text-center md:text-left">
-            <div className="w-12 h-12 bg-blue-600 text-white flex items-center justify-center font-bold text-lg">
-              YK
-            </div>
+            <img
+              src={logo}
+              alt="Career College Logo"
+              className="w-12 h-12 rounded"
+            />
+
             <div>
               <h3 className="text-lg font-bold text-gray-800">
                 Career College
@@ -42,7 +46,7 @@ const Footer = () => {
           {/* Text */}
           <p className="text-xs md:text-base text-blue-900 text-center">
             Admissions are open for{" "}
-            <span className="font-bold">Jan’26 Session</span>. Enroll today!
+            <span className="font-bold">26 Session</span>. Enroll today!
           </p>
 
           {/* Button */}

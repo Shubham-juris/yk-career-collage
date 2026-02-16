@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/logo/logo.png"
 import TopBar from "./Topbar";
 
 const Navbar = () => {
@@ -20,17 +21,19 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-blue-600 text-white flex items-center justify-center font-bold rounded">
-              YK
-            </div>
+            <img
+              src={logo}
+              alt="Career College Logo"
+              className="w-10 h-10 rounded"
+            />
             <span className="font-bold text-lg text-gray-800">
-              Career College
+             YK Career College
             </span>
           </NavLink>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-6 items-center font-medium">
-             <NavLink to="/" className={linkClass}>
+            <NavLink to="/" className={linkClass}>
               Home
             </NavLink>
             <NavLink to="/programs" className={linkClass}>
@@ -67,7 +70,7 @@ const Navbar = () => {
         {open && (
           <div className="md:hidden bg-white border-t shadow-lg">
             <nav className="flex flex-col p-4 gap-4 font-medium">
-               <NavLink
+              <NavLink
                 to="/"
                 className={linkClass}
                 onClick={() => setOpen(false)}
