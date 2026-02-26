@@ -7,10 +7,8 @@ const Footer = () => {
 
   return (
     <>
-      {/* ===== Main Footer ===== */}
       <footer className="bg-white border-t">
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
-          {/* Logo Section */}
           <div className="flex items-center gap-3 text-center md:text-left">
             <img
               src={logo}
@@ -26,7 +24,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Address */}
           <div className="text-sm text-gray-700 text-center md:text-right">
             <p className="font-semibold">YK Career College</p>
             <p>215-213 Main Street, Slave Lake AB, T0G 2A2</p>
@@ -35,7 +32,6 @@ const Footer = () => {
         </div>
       </footer>
 
-      {/* ===== Copyright ===== */}
       <div className="bg-white border-t text-center py-3 text-xs md:text-sm text-gray-600">
         © {new Date().getFullYear()} Career College. All rights reserved
       </div>
