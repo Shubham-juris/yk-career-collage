@@ -30,7 +30,7 @@ export default function NotificationBell() {
                 <span className="text-red-600 font-semibold">
                   Get upto 25% early-bird scholarship!
                 </span>{" "}
-                Valid till 27th Feb!
+                Valid till 31 March!
               </p>
             </div>
           </div>
