@@ -1,64 +1,4 @@
-// import React from "react";
-// import { useChat } from "../usecontext/ChatContext";
-// import logo from "../assets/logo/logo.png"
 
-// const Footer = () => {
-//   const { setOpen } = useChat();
-
-//   return (
-//     <>
-//       <footer className="bg-white border-t">
-//         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
-//           <div className="flex items-center gap-3 text-center md:text-left">
-//             <img
-//               src={logo}
-//               alt="Career College Logo"
-//               className="w-12 h-12 rounded"
-//             />
-
-//             <div>
-//               <h3 className="text-lg font-bold text-gray-800">
-//                 Career College
-//               </h3>
-//               <p className="text-sm text-gray-600">Learn. Grow. Succeed.</p>
-//             </div>
-//           </div>
-
-//           <div className="text-sm text-gray-700 text-center md:text-right">
-//             <p className="font-semibold">YK Career College</p>
-//             <p>215-213 Main Street, Slave Lake AB, T0G 2A2</p>
-//             <p>311 32 WESTWINDS CRES NE, #110, CALGARY, Alberta, T3J5L3</p>
-//           </div>
-//         </div>
-//       </footer>
-
-//       <div className="bg-white border-t text-center py-3 text-xs md:text-sm text-gray-600">
-//         © {new Date().getFullYear()} Career College. All rights reserved
-//       </div>
-
-//       {/* ===== Bottom Admission Bar ===== */}
-//       <div className="fixed bottom-0 left-0 w-full z-50 bg-blue-200 border-t">
-//         <div className="max-w-7xl mx-auto px-3 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
-//           {/* Text */}
-//           <p className="text-xs md:text-base text-blue-900 text-center">
-//             Admissions are open for{" "}
-//             <span className="font-bold">26 Session</span>. Enroll today!
-//           </p>
-
-//           {/* Button */}
-//           <button
-//             onClick={() => setOpen(true)}
-//             className="bg-blue-600 text-white px-4 py-2 text-xs md:text-sm rounded-full shadow-lg w-full md:w-auto"
-//           >
-//             Chat Now
-//           </button>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Footer;
 import React from "react";
 import { useChat } from "../usecontext/ChatContext";
 import logo from "../assets/logo/logo.png";
@@ -83,7 +23,7 @@ const Footer = () => {
 
               <div>
                 <h3 className="text-lg font-bold text-gray-800">
-                  Career College
+                 YK Career College
                 </h3>
                 <p className="text-sm text-gray-600">Learn. Grow. Succeed.</p>
               </div>
